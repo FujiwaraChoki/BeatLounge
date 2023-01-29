@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/487de91fbd.js" crossorigin="anonymous"></script>
+    <title>BeatLounge</title>
+</head>
+
+<body>
+    <h1>BeatLounge</h1>
+    <div class="icons">
+        <i class="fa-solid fa-language change-language-button dropdown-toggle" id="languageDropdown"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown-menu language-selection hidden" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="/en/">English</a>
+                <a class="dropdown-item" href="/es/">Español</a>
+                <a class="dropdown-item" href="/fr/">Français</a>
+                <a class="dropdown-item" href="/de/">Deutsch</a>
+                <a class="dropdown-item" href="/cn/">中文</a>
+                <a class="dropdown-item" href="/jp/">日本語</a>
+            </div>
+        </i>
+        <i class="fas fa-refresh refresh-button"></i>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Demandez une chanson !"
+                        aria-label="Search for a song" aria-describedby="searchSongButton" id="searchSongInput">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-success" type="submit" id="searchSongButton">Chercher</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="songContainer"></div>
+    <div class="animation">
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_l5qvxwtf.json" background="transparent"
+            speed="1" style="width: 400px; height: 400px;" loop autoplay>
+        </lottie-player>
+        <p class="text-muted">Commencez à rechercher vos chansons préférées !</p>
+    </div>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
