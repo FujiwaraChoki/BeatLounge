@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const changeLanguageButton = document.querySelector('.change-language-button');
-    changeLanguageButton.addEventListener('click', () => {
-        const languageSelection = document.querySelector('.language-selection');
-        languageSelection.classList.toggle('hidden');
-        changeLanguageButton.appendChild(selection);
-    });
-
     const refreshButton = document.querySelector('.refresh-button');
     refreshButton.addEventListener('click', () => {
         clearSongContainer(true);
