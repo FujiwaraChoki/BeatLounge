@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatLounge - Index</title>
+    <script>
+        // Get the user's language
+        const userLang = navigator.language || navigator.userLanguage;
+        console.log('Redirecting to "' + userLang + '" site...')
+
+        // Make switch
+        switch (userLang) {
+            case 'de-DE' || 'de-AT' || 'de-CH' || 'de-LI' || 'de-LU':
+                window.location.href = 'https://beat-lounge.vercel.app/de/';
+                break;
+            case 'en-US' || 'en-GB' || 'en-AU' || 'en-CA' || 'en-NZ' || 'en-ZA' || 'en':
+                window.location.href = 'https://beat-lounge.vercel.app/en/';
+                break;
+            case 'fr-FR' || 'fr-BE' || 'fr-CA' || 'fr-CH' || 'fr-LU' || 'fr-MC':
+                window.location.href = 'https://beat-lounge.vercel.app/fr/';
+                break;
+            case 'cn-CN' || 'cn-HK' || 'cn-MO' || 'cn-SG' || 'cn-TW':
+                window.location.href = 'https://beat-lounge.vercel.app/cn/';
+                break;
+            case 'es-ES' || 'es-AR' || 'es-BO' || 'es-CL' || 'es-CO' || 'es-CR' || 'es-DO' || 'es-EC' || 'es-GT' || 'es-HN' || 'es-MX' || 'es-NI' || 'es-PA' || 'es-PE' || 'es-PR' || 'es-PY' || 'es-SV' || 'es-US' || 'es-UY' || 'es-VE':
+                window.location.href = 'https://beat-lounge.vercel.app/es/';
+                break;
+            case 'jp-JP' || 'jp':
+                window.location.href = 'https://beat-lounge.vercel.app/jp/';
+                break;
+            default:
+                window.location.href = 'https://beat-lounge.vercel.app/en/';
+                break;
+        }
+
+    </script>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <a class="button" href="https://beat-lounge.vercel.app/en/">Go to english site</a>
+</body>
+</html>
